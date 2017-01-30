@@ -1,5 +1,6 @@
 {
   "name": "vue-ptero",
+  "description": "The Vue binding for ptero",
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
@@ -30,5 +31,13 @@
     "email": "pinemz@gmail.com",
     "url": "https://github.com/pine"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emoji-gen/vue-ptero"
+  },
+  "bugs": {
+    "url": "https://github.com/emoji-gen/vue-ptero/issues"
+  },
+  "homepage": "https://github.com/emoji-gen/vue-ptero",
   "license": "MIT"
 }
