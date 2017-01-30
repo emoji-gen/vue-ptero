@@ -6,7 +6,7 @@ vue-ptero
 [![Dependency Status](https://img.shields.io/david/emoji-gen/vue-ptero.svg?maxAge=2592000&style=flat-square)](https://david-dm.org/emoji-gen/vue-ptero)
 [![devDependency Status](https://img.shields.io/david/dev/emoji-gen/vue-ptero.svg?maxAge=2592000&style=flat-square)](https://david-dm.org/emoji-gen/vue-ptero?type=dev)
 
-The Vue directive that bind to [Sharer.js](https://github.com/ellisonleao/ptero.js/)
+:deciduous_tree: The Vue binding for [ptero](https://github.com/emoji-gen/ptero)
 
 ## Requirements
 
