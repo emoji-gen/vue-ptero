@@ -1,0 +1,11 @@
+{
+  "name": "vue-ptero",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": {
+    "name": "Pine Mizune",
+    "email": "pinemz@gmail.com",
+    "url": "https://github.com/pine"
+  },
+  "license": "MIT"
+}
