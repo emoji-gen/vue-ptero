@@ -12,10 +12,30 @@ vue-ptero
 
 - Vue 1.0 or 2.0
 
-## Getting Started
+## Getting started
 
 ```
 $ npm install vue-ptero --save
+```
+
+```
+const Vue      = require('Vue')
+const VuePtero = require('vue-ptero')
+
+Vue.use(VuePtero, { target: document.body })
+
+new Vue({
+    el: '#app',
+    created() {
+        // listen a custom event
+        this.$ptero.on('event-xxx', e => {
+            console.log(e.detail)
+        })
+
+        // emit a custom event
+        this.$ptero.emit('event-xxx', { foo: 1 })
+    },
+})
 ```
 
 ## Example
