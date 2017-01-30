@@ -1,6 +1,6 @@
 'use strict'
 
-var Ptero = require('ptero')
+var Ptero = require('ptero').Ptero
 
 var VuePtero = {
   install: function (Vue, options) {
