@@ -7,7 +7,7 @@
     "example": "shjs example/build.js"
   },
   "dependencies": {
-    "ptero": "^0.1.1"
+    "ptero": "^0.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
