@@ -7,5 +7,8 @@
     "email": "pinemz@gmail.com",
     "url": "https://github.com/pine"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ptero": "^0.1.1"
+  }
 }
