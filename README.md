@@ -18,7 +18,7 @@ vue-ptero
 $ npm install vue-ptero --save
 ```
 
-```
+```js
 const Vue      = require('Vue')
 const VuePtero = require('vue-ptero')
 
