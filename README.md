@@ -49,4 +49,4 @@ $ yarn run example
 ```
 
 ## License
-MIT @ [Emoji Generator](https://emoji.pine.moe)
+MIT &copy; [Emoji Generator](https://emoji.pine.moe)
