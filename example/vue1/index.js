@@ -1,6 +1,6 @@
 'use strict'
 
-var Vue      = require('vue')
+var Vue = require('vue')
 var VuePtero = require('../../index.js')
 
 Vue.use(VuePtero, { target: document.body })
