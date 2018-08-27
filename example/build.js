@@ -1,12 +1,22 @@
 set('-ev')
 cd(__dirname)
 
-pushd('./vue')
-exec('yarn-install')
-exec('npm run build')
+pushd('./vue1')
+if (which('yarn')) {
+  exec('yarn')
+  exec('yarn run build')
+} else {
+  exec('npm install')
+  exec('npm run build')
+}
 popd()
 
 pushd('./vue2')
-exec('yarn-install')
-exec('npm run build')
+if (which('yarn')) {
+  exec('yarn')
+  exec('yarn run build')
+} else {
+  exec('npm install')
+  exec('npm run build')
+}
 popd()
