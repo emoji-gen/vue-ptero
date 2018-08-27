@@ -58,7 +58,7 @@ if (isTravis && isFirstJob) {
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['mocha', 'sinon-chai'],
+    frameworks: ['mocha', 'chai-spies', 'chai'],
 
     browsers: browsers,
     customLaunchers: customLaunchers,

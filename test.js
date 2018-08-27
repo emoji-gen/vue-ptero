@@ -1,4 +1,3 @@
-var expect   = require('chai').expect
 var VuePtero = require('./index')
 
 describe('index', function () {
@@ -19,10 +18,10 @@ describe('index', function () {
         var vm = new Vue()
         expect(vm.$ptero).to.be.ok
 
-        var spy = sinon.spy()
+        var spy = chai.spy()
         vm.$ptero.on('event-xxx-1', spy)
         vm.$ptero.emit('event-xxx-1')
-        expect(spy).to.have.been.calledOnce
+        expect(spy).to.have.been.called.once
       })
     })
 
@@ -33,10 +32,10 @@ describe('index', function () {
         var vm = new Vue()
         expect(vm.$ptero).to.be.ok
 
-        var spy = sinon.spy()
+        var spy = chai.spy()
         vm.$ptero.on('event-xxx-2', spy)
         vm.$ptero.emit('event-xxx-2')
-        expect(spy).to.have.been.calledOnce
+        expect(spy).to.have.been.called.once
       })
     })
   })
