@@ -2,7 +2,7 @@
 
 const path = require('path')
 
-const customLaunchers = {
+const sauceLabsLaunchers = {
   sl_chrome: {
     base: 'SauceLabs',
     browserName: 'chrome',
@@ -38,9 +38,9 @@ const customLaunchers = {
 const isTravis = process.env.TRAVIS === 'true'
 const isFirstJob = /\.1$/.test(process.env.TRAVIS_JOB_NUMBER)
 
-const browsers = [ isTravis ? 'ChromiumHeadless' : 'ChromeHeadless' ]
+const browsers = [ isTravis ? 'ChromiumHeadlessCI' : 'ChromeHeadless' ]
 if (isTravis && isFirstJob) {
-  browsers.push(...Object.keys(customLaunchers))
+  browsers.push(...Object.keys(sauceLabsLaunchers))
 }
 
 module.exports = function(config) {
@@ -49,7 +49,15 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai-spies', 'chai'],
 
     browsers: browsers,
-    customLaunchers: customLaunchers,
+    customLaunchers: {
+      ChromiumHeadlessNoSandbox: {
+        base: 'ChromiumHeadless',
+        flags: [
+          '--no-sandbox',
+        ],
+      },
+      ...sauceLabsLaunchers,
+    },
 
     sauceLabs: {
       public: 'public',
