@@ -10,7 +10,7 @@ vue-ptero
 
 ## Requirements
 
-- Vue 1.0 or 2.0
+- Vue 1.x or 2.x
 
 ## Getting started
 
