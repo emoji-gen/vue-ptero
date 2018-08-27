@@ -15,18 +15,6 @@ const customLaunchers = {
     platform: 'Windows 10',
     version: '47.0'
   },
-  sl_ie9: {
-    base: 'SauceLabs',
-    browserName: 'internet explorer',
-    platform: 'Windows 7',
-    version: '9.0',
-  },
-  sl_ie10: {
-    base: 'SauceLabs',
-    browserName: 'internet explorer',
-    platform: 'Windows 7',
-    version: '10.0',
-  },
   sl_ie11: {
     base: 'SauceLabs',
     browserName: 'internet explorer',
@@ -47,7 +35,7 @@ const customLaunchers = {
   },
 }
 
-const isTravis   = process.env.TRAVIS === 'true'
+const isTravis = process.env.TRAVIS === 'true'
 const isFirstJob = /\.1$/.test(process.env.TRAVIS_JOB_NUMBER)
 
 const browsers = ['PhantomJS']
