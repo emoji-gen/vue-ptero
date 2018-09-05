@@ -49,16 +49,14 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai-spies', 'chai'],
 
     browsers: browsers,
-    customLaunchers: {
+    customLaunchers: Object.assign({
       ChromiumHeadlessNoSandbox: {
         base: 'ChromiumHeadless',
         flags: [
           '--no-sandbox',
         ],
       },
-      ...sauceLabsLaunchers,
-    },
-
+    }, sauceLabsLaunchers),
     sauceLabs: {
       public: 'public',
     },
