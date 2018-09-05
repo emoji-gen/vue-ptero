@@ -38,7 +38,7 @@ const sauceLabsLaunchers = {
 const isTravis = process.env.TRAVIS === 'true'
 const isFirstJob = /\.1$/.test(process.env.TRAVIS_JOB_NUMBER)
 
-const browsers = [ isTravis ? 'ChromiumHeadlessCI' : 'ChromeHeadless' ]
+const browsers = [ isTravis ? 'ChromiumHeadless_without_security' : 'ChromeHeadless' ]
 if (isTravis && isFirstJob) {
   browsers.push(...Object.keys(sauceLabsLaunchers))
 }
@@ -50,10 +50,11 @@ module.exports = function(config) {
 
     browsers: browsers,
     customLaunchers: Object.assign({
-      ChromiumHeadlessNoSandbox: {
+      ChromiumHeadless_without_security: {
         base: 'ChromiumHeadless',
         flags: [
           '--no-sandbox',
+          '--disable-setuid-sandbox',
         ],
       },
     }, sauceLabsLaunchers),
