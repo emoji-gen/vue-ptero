@@ -1,9 +1,19 @@
 {
   "groups": {
+    "vue1": {
+      "packages": [
+        "example/vue/package.json"
+      ],
+      "ignore": ["vue"]
+    },
+    "vue2": {
+      "packages": [
+        "example/vue2/package.json"
+      ],
+      "ignore": ["vue"]
+    },
     "default": {
       "packages": [
-        "example/vue/package.json",
-        "example/vue2/package.json",
         "package.json"
       ]
     }
