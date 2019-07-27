@@ -16,7 +16,8 @@ vue-ptero
 ## Getting started
 
 ```
-$ npm install vue-ptero --save
+$ npm install vue-ptero --save # for npm users
+$ yarn add vue-ptero           # for yarn users
 ```
 
 ```js
