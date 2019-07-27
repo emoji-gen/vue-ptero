@@ -15,7 +15,7 @@ vue-ptero
 
 ## Getting started
 
-```
+```bash
 $ npm install vue-ptero --save # for npm users
 $ yarn add vue-ptero           # for yarn users
 ```
@@ -43,7 +43,7 @@ new Vue({
 ## Example
 First, try to build example projects.
 
-```
+```bash
 $ git clone https://github.com/emoji-gen/vue-ptero.git
 $ cd vue-ptero
 $ yarn
