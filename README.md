@@ -5,6 +5,7 @@ vue-ptero
 [![Build Status](https://travis-ci.org/emoji-gen/vue-ptero.svg?branch=master)](https://travis-ci.org/emoji-gen/vue-ptero)
 [![dependencies Status](https://david-dm.org/emoji-gen/vue-ptero/status.svg)](https://david-dm.org/emoji-gen/vue-ptero)
 [![devDependencies Status](https://david-dm.org/emoji-gen/vue-ptero/dev-status.svg)](https://david-dm.org/emoji-gen/vue-ptero?type=dev)
+[![License](https://img.shields.io/static/v1?label=License&message=MIT&color=green)](https://opensource.org/licenses/MIT)
 
 :deciduous_tree: The Vue binding for [ptero](https://github.com/emoji-gen/ptero)
 
