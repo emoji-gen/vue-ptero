@@ -21,7 +21,7 @@ $ yarn add vue-ptero           # for yarn users
 ```
 
 ```js
-const Vue = require('Vue')
+const Vue = require('vue')
 const VuePtero = require('vue-ptero')
 
 Vue.use(VuePtero, { target: document.body })
