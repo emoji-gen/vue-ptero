@@ -23,7 +23,7 @@
     "mocha": "^6.0.0",
     "shelljs": "^0.8.2",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.10",
     "yarn-install": "^1.0.0"
   },
   "author": {
